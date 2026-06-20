@@ -3,13 +3,290 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ryval</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Ryval — Challenge yourself, together</title>
+  <meta name="description" content="Ryval is a social challenge tracking app. Create challenges, log your progress, and rally your friends on the leaderboard. No ads. No tracking. Built by Grove Innovation Corp." />
+
+  <link rel="canonical" href="https://ryval.net/" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/favicon.svg" />
+  <meta name="theme-color" content="#ff6600" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ryval — Challenge yourself, together" />
+  <meta property="og:description" content="Create challenges, track your progress, and rally your friends. Ryval turns goals into a game you play together." />
+  <meta property="og:url" content="https://ryval.net/" />
+  <meta property="og:site_name" content="Ryval" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Hello, World!</h1>
-    <p>Welcome to <span class="brand">Ryval</span>.</p>
-  </div>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="wrap nav">
+      <a class="brand" href="/" aria-label="Ryval home">
+        <img class="brand__mark" src="/assets/favicon.svg" alt="" width="30" height="30" />
+        <img class="brand__wordmark" src="/assets/ryval-wordmark.png" alt="Ryval" />
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link nav__link--hide-sm" href="#features">Features</a>
+        <a class="nav__link nav__link--hide-sm" href="#privacy">Privacy</a>
+        <a class="nav__link" href="/privacy">Privacy Policy</a>
+        <a class="btn btn--primary btn--sm nav__cta" href="#get">Get the app</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__grid"></div>
+      <div class="wrap">
+        <div class="hero__layout">
+          <div class="hero__copy">
+            <span class="eyebrow reveal" data-d="1">Social challenge tracking</span>
+            <h1 class="reveal" data-d="2">Challenge yourself,<br /><span class="accent">together.</span></h1>
+            <p class="hero__lead reveal" data-d="3">
+              Create any challenge — run a 5K, read 12 books, drink more water — invite your
+              friends, log your progress, and watch the leaderboard. Every entry moves you forward.
+            </p>
+            <div class="hero__actions reveal" data-d="4">
+              <span class="store-btn" role="img" aria-label="Coming soon to the App Store">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+                <span class="store-btn__text"><span class="store-btn__top">Coming soon to the</span><span class="store-btn__bottom">App Store</span></span>
+              </span>
+              <span class="store-btn" role="img" aria-label="Coming soon to Google Play">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+                <span class="store-btn__text"><span class="store-btn__top">Coming soon to</span><span class="store-btn__bottom">Google Play</span></span>
+              </span>
+            </div>
+            <p class="hero__note reveal" data-d="5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              No ads. No tracking. We never sell your data.
+            </p>
+          </div>
+
+          <!-- Phone mockup -->
+          <div class="phone-stage reveal" data-d="3" aria-hidden="true">
+            <div class="phone">
+              <div class="phone__screen">
+                <div class="phone__notch"></div>
+                <div class="app__status">
+                  <span>9:41</span>
+                  <span class="app__status-icons"><span></span></span>
+                </div>
+                <div class="app__bar">
+                  <img class="app__logo" src="/assets/ryval-wordmark.png" alt="" style="filter:none;" />
+                  <div class="app__icons">
+                    <span class="app__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></span>
+                    <span class="app__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>
+                    <span class="app__avatar"></span>
+                  </div>
+                </div>
+                <div class="app__body">
+                  <div class="app__h">
+                    <span class="app__title">My Challenges</span>
+                    <span class="app__create"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>Create</span>
+                  </div>
+                  <div class="app__tabs">
+                    <span class="app__tab app__tab--on">Active</span>
+                    <span class="app__tab">Upcoming</span>
+                    <span class="app__tab">Completed</span>
+                  </div>
+
+                  <div class="ch">
+                    <div class="ch__top">
+                      <div>
+                        <div class="ch__name">Run a 5K</div>
+                        <div class="ch__sub">Goal: 5 km · Daily</div>
+                      </div>
+                      <span class="ch__badge">Active</span>
+                    </div>
+                    <div class="ch__row"><span class="ch__row-label">Overall progress</span><span class="ch__row-val">21 / 31 days</span></div>
+                    <div class="bar"><span class="bar__fill"></span></div>
+                    <div class="ch__foot">
+                      <span class="ch__rank">Rank <b>#1</b> · 6 participants</span>
+                      <span class="ch__log">Log Activity</span>
+                    </div>
+                  </div>
+
+                  <div class="ch ch--ghost">
+                    <div class="ch__top">
+                      <div>
+                        <div class="ch__name">Read 12 books</div>
+                        <div class="ch__sub">Goal: 12 books · Monthly</div>
+                      </div>
+                      <span class="ch__badge">Active</span>
+                    </div>
+                    <div class="bar" style="margin-top:13px;"><span class="bar__fill" style="width:42%;"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Trust strip ============ -->
+    <div class="trust">
+      <div class="wrap trust__inner">
+        <span class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>iOS &amp; Android</span>
+        <span class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>No ads, ever</span>
+        <span class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Photo metadata stripped on-device</span>
+        <span class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Built by Grove Innovation Corp.</span>
+      </div>
+    </div>
+
+    <!-- ============ Features ============ -->
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="section__head">
+          <span class="eyebrow">What you get</span>
+          <h2>Built for friends who actually finish things.</h2>
+          <p class="section__sub">Set the goal, log the reps, and let a little friendly competition do the rest.</p>
+        </div>
+        <div class="features">
+          <article class="feature">
+            <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+            <h3>Create challenges</h3>
+            <p>Run a 5K, read 12 books, drink more water. Any goal, any rules, any timeline — you set it.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg></div>
+            <h3>Track progress</h3>
+            <p>Log every entry and watch your totals, streaks, and overall completion climb in real time.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3>Rally your friends</h3>
+            <p>Invite friends, compare on a live leaderboard, and keep each other honest until the finish.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg></div>
+            <h3>Real activity proof</h3>
+            <p>Back up your wins with proof photos. Location and device metadata are stripped before they ever leave your phone.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></div>
+            <h3>Smart reminders</h3>
+            <p>Opt-in nudges for streaks, friend requests, and challenge updates. Switch them off any time.</p>
+          </article>
+          <article class="feature">
+            <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Private by default</h3>
+            <p>No ads, no analytics, no tracking. We collect only what the app needs to work — and nothing more.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Privacy band ============ -->
+    <section class="privacy-band" id="privacy">
+      <div class="wrap privacy-band__inner">
+        <span class="eyebrow">Privacy first</span>
+        <h2>We don't track you. We don't run ads. We don't sell your <span class="accent">data.</span></h2>
+        <p>
+          Your photos are stripped of location and device metadata before they ever leave your phone.
+          We store only what Ryval needs to work — and you can permanently delete all of it in seconds.
+        </p>
+        <div class="privacy-chips">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>No location</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>No contacts</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>No analytics</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>No advertising</span>
+        </div>
+        <a class="btn btn--light" href="/privacy">
+          Read the privacy policy
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ Final CTA ============ -->
+    <section class="section cta" id="get">
+      <div class="wrap">
+        <div class="cta__box">
+          <span class="eyebrow" style="justify-content:center;">Launching 2026</span>
+          <h2>Ready to make it a competition?</h2>
+          <p>Ryval is coming to iOS and Android. Get it the day it drops and challenge your friends first.</p>
+          <div class="cta__actions">
+            <span class="store-btn" role="img" aria-label="Coming soon to the App Store">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+              <span class="store-btn__text"><span class="store-btn__top">Coming soon to the</span><span class="store-btn__bottom">App Store</span></span>
+            </span>
+            <span class="store-btn" role="img" aria-label="Coming soon to Google Play">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+              <span class="store-btn__text"><span class="store-btn__top">Coming soon to</span><span class="store-btn__bottom">Google Play</span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-mark">
+            <img class="brand__mark" src="/assets/favicon.svg" alt="" width="32" height="32" />
+            <img class="footer__wordmark" src="/assets/ryval-wordmark.png" alt="Ryval" />
+          </div>
+          <div class="footer__entity">Grove Innovation Corp.</div>
+          <address class="footer__addr">
+            9273 Sunflower Meadow Road<br />
+            Boca Raton, FL 33434<br />
+            United States<br />
+            <a href="mailto:support@ryval.net">support@ryval.net</a>
+          </address>
+        </div>
+
+        <div class="footer__col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#privacy">Privacy</a></li>
+            <li><a href="/#get">Get the app</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="mailto:support@ryval.net">Contact support</a></li>
+            <li><a href="mailto:support@ryval.net">support@ryval.net</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Grove Innovation Corp. All rights reserved.</span>
+        <span>Ryval is a product of Grove Innovation Corp.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header border on scroll
+    (function () {
+      var header = document.getElementById('siteHeader');
+      if (!header) return;
+      var onScroll = function () {
+        header.setAttribute('data-scrolled', window.scrollY > 8 ? 'true' : 'false');
+      };
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+  </script>
 </body>
 </html>
