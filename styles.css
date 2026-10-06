@@ -494,10 +494,6 @@ a { color: inherit; text-decoration: none; }
 .footer__brand-mark { display: inline-flex; align-items: center; gap: 11px; margin-bottom: 18px; }
 .footer__brand-mark img.brand__mark { width: 32px; height: 32px; }
 .footer__wordmark { height: 20px; width: auto; filter: brightness(0) invert(1); }
-.footer__entity { font-weight: 600; color: #fafafa; font-size: 15px; }
-.footer__addr { font-style: normal; color: #a1a1aa; font-size: 14px; line-height: 1.7; margin-top: 6px; }
-.footer__addr a { color: #a1a1aa; transition: color 0.2s; }
-.footer__addr a:hover { color: var(--orange); }
 
 .footer__col h4 {
   font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
